@@ -1,6 +1,6 @@
 const { Builder, By, Key, until, Browser } = require("selenium-webdriver");
 const chrome = require("selenium-webdriver/chrome");
-const options = new chrome.Options({ headless: true });
+const options = new chrome.Options();
 const fs = require("fs");
 
 (async function example() {
