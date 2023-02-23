@@ -9,7 +9,6 @@ const fs = require("fs");
     .setChromeOptions(options.headless())
     .build();
   try {
-    // 네이버 실행
     await driver.get("https://www.google.com/ncr");
     await driver.findElement(By.name("q")).sendKeys("webdriver", Key.RETURN);
 
